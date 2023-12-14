@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { reactLocalStorage } from 'reactjs-localstorage';
 import { Pie, Bar } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
 import 'chartjs-plugin-datalabels';
 
 const BACKEND_URL = "http://45.55.196.68:3031";
@@ -23,6 +22,7 @@ function Dashboard() {
     } else {
       handleError('Token not available.');
     }
+    // eslint-disable-next-line
   }, []);
 
   const [pieChartData, setPieChartData] = useState({
@@ -44,6 +44,7 @@ function Dashboard() {
     setPieChartData(createPieChart());
     setDonutChartData(createDonutChart());
     setBarChartData(createBarChart());
+    // eslint-disable-next-line
   }, [budgetData]);
 
   const getBudget = async (token) => {
