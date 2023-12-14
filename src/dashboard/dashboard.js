@@ -3,7 +3,7 @@ import { reactLocalStorage } from 'reactjs-localstorage';
 import { Pie, Bar } from 'react-chartjs-2';
 import 'chartjs-plugin-datalabels';
 
-const BACKEND_URL = "http://45.55.196.68:3031";
+const BACKEND_URL = "https://45.55.196.68:3031";
 
 function Dashboard() {
   const [budgetData, setBudgetData] = useState([]);
