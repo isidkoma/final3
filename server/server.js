@@ -275,6 +275,6 @@ async function validateToken(token) {
   }
   
 
-app.listen(PORT,'45.55.196.68', () => {
+app.listen(PORT,'0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
