@@ -82,7 +82,7 @@ export default Login;
 
 async function loginUser(credentials) {
   try {
-    const response = await fetch('https://nbadbackend.onrender.com/login', {
+    const response = await fetch('https://backend-j64a.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
