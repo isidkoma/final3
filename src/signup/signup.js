@@ -34,6 +34,10 @@ class SignUp extends Component {
     if (password.length < 6) {
       errors.password = 'Password must be at least 6 characters';
     }
+     const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*\d)/;
+  if (!passwordRegex.test(password)) {
+    errors.password = 'Password must contain at least one uppercase letter, one special character, and one number';
+  }
 
     if (Object.keys(errors).length > 0) {
       this.setState({ errors });
