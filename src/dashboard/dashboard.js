@@ -3,7 +3,7 @@ import { reactLocalStorage } from 'reactjs-localstorage';
 import { Pie, Bar } from 'react-chartjs-2';
 import 'chartjs-plugin-datalabels';
 
-const BACKEND_URL = "https://nbadbackend.onrender.com";
+const BACKEND_URL = "https://backend-j64a.onrender.com";
 
 function Dashboard() {
   const [budgetData, setBudgetData] = useState([]);
